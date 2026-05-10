@@ -21,11 +21,8 @@ from sklearn.metrics import mean_squared_error, r2_score
 
 
 # STEP 1: LOAD DATASET
-url = "https://raw.githubusercontent.com/selva86/datasets/master/BostonHousing.csv"
-# Dataset URL
-
-df = pd.read_csv(url)
-# Reads dataset from URL into DataFrame
+df = pd.read_csv("HousingData.csv")
+# Reads dataset from local CSV file into DataFrame
 
 print("\nFirst 5 Rows:\n", df.head())
 # Output: Displays first 5 rows of Boston Housing dataset
